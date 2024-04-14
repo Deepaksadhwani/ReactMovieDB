@@ -11,9 +11,9 @@ const AddMovie = () => {
   
   const addMovieHandler = () => {
     const data = {
-      title: title,
-      description: description,
-      date: releaseDate,
+      title: title.current.value,
+      description: description.current.value,
+      date: releaseDate.current.value,
     }
     console.log(data)
   };
