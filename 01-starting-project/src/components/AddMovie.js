@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 
 
 
-const AddMovie = () => {
+const AddMovie = ({onAddMovie}) => {
 
   const title = useRef(null);
   const description = useRef(null);
@@ -15,7 +15,7 @@ const AddMovie = () => {
       description: description.current.value,
       date: releaseDate.current.value,
     }
-    console.log(data)
+    onAddMovie(data);
   };
 
 
